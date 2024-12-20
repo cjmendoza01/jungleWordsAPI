@@ -1,0 +1,21 @@
+{
+  "accessCode": {
+    "beginner": "",
+    "intermediate": "",
+    "advance": ""
+  },
+  "beginner": {
+    "stage1": [],
+    "stage2": [],
+    "stage3": []
+  },
+  "intermediate": {
+    "stage1": [],
+    "stage2": [],
+    "stage3": []
+  },
+  "advanced": {
+    "stage1": [],
+    "stage2": []
+  }
+}
