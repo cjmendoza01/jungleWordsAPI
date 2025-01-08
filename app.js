@@ -31,6 +31,14 @@ app.get("/api/data", (req, res) => {
   res.json(data);
 });
 
+
+app.get("/api/data/:level/:stage", (req, res) => {
+  const {level, stage} = req.params
+  const data = readData();
+
+  res.json({data:data[level][stage]});
+});
+
 // Update accessCode
 app.put("/api/accessCode", (req, res) => {
   const { level, value } = req.body;
