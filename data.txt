@@ -1,8 +1,13 @@
 {
-  "accessCode": {
+  "accessCodeBoy": {
     "beginner": "",
     "intermediate": "",
-    "advance": ""
+    "advanced": ""
+  },
+  "accessCodeGirl": {
+    "beginner": "",
+    "intermediate": "",
+    "advanced": ""
   },
   "beginner": {
     "stage1": [],

@@ -64,12 +64,14 @@ app.get("/api/data/:level/:stage", (req, res) => {
 
 // Update accessCode
 app.put("/api/accessCode", (req, res) => {
-	const { level, value } = req.body;
+	const { level, value, gender } = req.body;
 	if (!["beginner", "intermediate", "advance"].includes(level)) {
 		return res.status(400).json({ error: "Invalid accessCode level." });
 	}
 	const data = readData();
-	data.accessCode[level] = value;
+	if (gender === "boy") data.accessCodeBoy[level] = value;
+	else data.accessCodeGirl[level] = value;
+
 	writeData(data);
 	res.json({ message: "Access code updated successfully", data });
 });
