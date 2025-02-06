@@ -8,8 +8,10 @@ app.use(bodyParser.json());
 
 const allowedOrigins = [
 	"http://localhost:5173",
-	"https://junglewords.org/",
+	"https://junglewords.org",
 	"https://junglewords.onrender.com",
+	"https://www.junglewords.org",
+	"https://www.junglewords.org/ItemManagementG1",
 ];
 
 const corsOptions = {
